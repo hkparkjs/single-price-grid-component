@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.container {
+  width: 311px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+.intro h1 {
+  font-size: 18px;
+  color: var(--cyan);
+  margin: 20px 0;
+}
+
+.intro p {
+  color: var(--bright-yellow);
+  width: 286px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.intro p:last-child {
+  color: var(--grayish-blue);
+  line-height: 28px;
+  font-weight: 400;
+  width: 267px;
+  font-size: 13px;
+}
+
+.intro {
+  background-color: #fff;
+  height: 268px;
+}
+
+.subscription {
+  background-color: var(--cyan);
+  color: var(--white);
+  height: 228px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+.subscription h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.price span:first-child {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.price span:last-child {
+  color: var(--light-gray);
+}
+
+.subscription p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.subscription button {
+  width: 263px;
+  height: 48px;
+  background-color: var(--bright-yellow);
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.benefit {
+  height: 228px;
+  background-color: var(--cyan);
+  opacity: 80%;
+  color: var(--white);
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefit h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.benefit ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+  color: var(--light-gray);
+}
+
+.benefit li {
+  margin-bottom: 5px;
+}
