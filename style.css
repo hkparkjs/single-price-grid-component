@@ -27,6 +27,7 @@ body {
 
 .container {
   width: 311px;
+  height: 724px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -143,4 +144,93 @@ body {
 
 .benefit li {
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 635px;
+    height: 475px;
+  }
+
+  .intro {
+    height: 216px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: start;
+    align-items: center;
+    padding-left: 40px;
+    grid-template-rows: 93px 17px 77px;
+  }
+
+  .intro h1 {
+    margin: 0;
+    font-size: 23px;
+    padding-top: 16px;
+  }
+
+  .intro p {
+    width: 348px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .intro p:last-child {
+    width: 500px;
+    font-size: 15px;
+  }
+
+  .subscription {
+    height: 259px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 0;
+    grid-template-rows: 71px 52px 49px;
+  }
+
+  .subscription h2 {
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .subscription button {
+    width: 240px;
+  }
+
+  .price {
+    margin-bottom: 0;
+  }
+
+  .price span:first-child {
+    font-size: 33px;
+  }
+
+  .subscription p {
+    margin-bottom: 0;
+  }
+
+  .benefit {
+    height: 259px;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 40px;
+    justify-content: start;
+    grid-template-rows: 82px 52px;
+  }
+
+  .benefit h2 {
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
 }
