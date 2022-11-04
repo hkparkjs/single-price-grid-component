@@ -83,6 +83,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 18px;
+  font-weight: 700;
 }
 
 .price {
@@ -131,7 +132,7 @@ body {
 
 .benefit h2 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
