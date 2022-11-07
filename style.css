@@ -58,7 +58,7 @@ body {
 
 .intro p:last-child {
   color: var(--grayish-blue);
-  line-height: 28px;
+  line-height: 26px;
   font-weight: 400;
   width: 267px;
   font-size: 13px;
@@ -95,6 +95,7 @@ body {
 .price span:first-child {
   font-size: 30px;
   margin-right: 15px;
+  font-weight: 700;
 }
 
 .price span:last-child {
@@ -102,13 +103,16 @@ body {
 }
 
 .subscription p {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
-.subscription button {
+.subscription a {
   width: 263px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bright-yellow);
   border: 0;
   border-radius: 5px;
@@ -117,6 +121,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  text-decoration: none;
 }
 
 .benefit {
@@ -171,7 +176,7 @@ body {
 
   .intro h1 {
     margin: 0;
-    font-size: 23px;
+    font-size: 24px;
     padding-top: 16px;
   }
 
@@ -183,8 +188,8 @@ body {
   }
 
   .intro p:last-child {
-    width: 500px;
-    font-size: 15px;
+    width: 529px;
+    font-size: 16px;
   }
 
   .subscription {
@@ -204,7 +209,7 @@ body {
     font-weight: 700;
   }
 
-  .subscription button {
+  .subscription a {
     width: 240px;
   }
 
